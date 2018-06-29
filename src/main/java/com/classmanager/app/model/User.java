@@ -11,6 +11,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
@@ -35,7 +36,8 @@ public class User {
 	private String password;
 
 	private Type type;
-
+	
+	@JsonIgnore
 	@ManyToMany
 	@JoinTable(name="user_course", joinColumns= {@JoinColumn(name="fk_user")}, inverseJoinColumns= {@JoinColumn(name="fk_course")})
 	private List<Course> courses;
