@@ -18,6 +18,8 @@ public class Course {
 	private Long id;
 
 	private String courseName;
+	
+	private String courseId;
 
 	@ManyToMany(mappedBy = "courses")
 	private List<User> users;
@@ -25,10 +27,11 @@ public class Course {
 	@OneToMany(mappedBy = "course")
 	private List<Assignment> assignments = new ArrayList<Assignment>();
 
-	public Course(Long id, String courseName, List<User> users, List<Assignment> assignments) {
+	public Course(Long id, String courseName, String courseId ,List<User> users, List<Assignment> assignments) {
 		super();
 		this.id = id;
 		this.courseName = courseName;
+		this.courseId = courseId;
 		this.users = users;
 		this.assignments = assignments;
 	}
@@ -68,5 +71,14 @@ public class Course {
 	public void setAssignments(List<Assignment> assignments) {
 		this.assignments = assignments;
 	}
+
+	public String getCourseId() {
+		return courseId;
+	}
+
+	public void setCourseId(String courseId) {
+		this.courseId = courseId;
+	}
+	
 
 }

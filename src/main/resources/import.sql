@@ -6,3 +6,11 @@ Insert into user value (5,"jguo@csula.com", "jiang sun" , "password","PROFESSOR"
 Insert into user value (6,"ypatel@csula.com", "yash patel" , "password","STUDENT","ypatel");
 Insert into user value (7,"dshah@csula.com", "damin shah" , "password","STUDENT","dshah");
 Insert into user value (8,"bshah@csula.com", "brij shah" , "password","STUDENT","bshah");
+
+
+Insert into course value (1,"cs4220","Advance JavaScript");
+Insert into course value (2,"cs5220","Advance Web Development");
+Insert into course value (3,"cs5780","Network Security");
+Insert into course value (4,"cs5540","Operating System");
+Insert into course value (5,"cs5112","Advance Data Structure");
+Insert into course value (6,"cs4661","Machine Learning");
