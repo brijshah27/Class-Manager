@@ -11,3 +11,4 @@ public class ClassManagerApplication {
 		SpringApplication.run(ClassManagerApplication.class, args);
 	}
 }
+

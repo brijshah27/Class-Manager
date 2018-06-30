@@ -40,9 +40,9 @@ public class User {
 	@Enumerated(EnumType.STRING)
 	private Type type;
 	
-	@JsonIgnore
 	@ManyToMany
 	@JoinTable(name="user_course", joinColumns= {@JoinColumn(name="fk_user")}, inverseJoinColumns= {@JoinColumn(name="fk_course")})
+	@JsonIgnore
 	private List<Course> courses;
 
 	public User() {

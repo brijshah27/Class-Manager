@@ -14,3 +14,10 @@ Insert into course value (3,"cs5780","Network Security");
 Insert into course value (4,"cs5540","Operating System");
 Insert into course value (5,"cs5112","Advance Data Structure");
 Insert into course value (6,"cs4661","Machine Learning");
+
+Insert into user_course value (1,6);
+Insert into user_course value (1,2);
+Insert into user_course value (1,1);
+Insert into user_course value (7,5);
+Insert into user_course value (7,6);
+Insert into user_course value (6,4);
